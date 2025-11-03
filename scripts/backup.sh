@@ -31,6 +31,7 @@ rm -rf $TARFILE
 tar -cf $TARFILE  --exclude=/root/Dropbox \
    --exclude=".*" \
    --exclude=$ARCHIVEDIR \
+   --exclude=/home/harald/fhem-docker \
    --exclude=/home/harald/artwork \
    --exclude=/home/harald/Downloads \
    --exclude=/home/harald/rompr \
