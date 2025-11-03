@@ -5,7 +5,7 @@ BACKUPDIR=/home/harald/backup
 ARCHIVE=/root/Dropbox/1-Data.7z
 LOGFILE=/home/harald/logfile.txt
 ARCHIVEDIR=/media/DriveX/hba/1-Data   
-OUTLOOKDIR=/media/DriveX/hba/Mail/0-Outlook
+MAILDIR=/media/DriveX/hba/Mail
 
 # new logfile
 date >$LOGFILE
@@ -39,7 +39,7 @@ tar -cf $TARFILE  --exclude=/root/Dropbox \
 # Create archive of 1-Data directory in Dropbox folder 
 # (Dropbox folder is used for historic reasons. Dropbox is no longer used)
 rm -f $ARCHIVE
-7z a -mhe=on -xr!.sync -xr!.git -p2bYFGvE28m0NcUkTK8SW $ARCHIVE $ARCHIVEDIR $OUTLOOKDIR $TARFILE >>$LOGFILE
+7z a -mhe=on -xr!.sync -xr!.git -p2bYFGvE28m0NcUkTK8SW $ARCHIVE $ARCHIVEDIR $MAILDIR $TARFILE >>$LOGFILE
 date >>$LOGFILE
 
 # copy to harald-bauer.com
@@ -67,3 +67,6 @@ exit 0
 # 2024-04-29 HB The folder 1-Data has been moved from ~ to hba/1-Data. 
 #               Outlook pst file is now in hba/Mail/0-Outlook (included in $ARCHIVE)
 #               $TARFILE is now part of $ARCHIVE
+# 2025-09-21 HB Outlook pst file is no longer part of the backup. It has been converted
+#               to mbox format for Thunderbird. It is stored in hba/Mail/Local Folders.
+#               hba/Mail is included in the backup.
