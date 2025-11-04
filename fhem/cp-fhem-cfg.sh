@@ -1,0 +1,1 @@
+cp /opt/fhem/*.cfg .
