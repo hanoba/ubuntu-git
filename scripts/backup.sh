@@ -47,14 +47,38 @@ date >>$LOGFILE
 sshpass -f /root/pw.txt sftp  harald@192.168.20.27 >>$LOGFILE  <<END_SCRIPT
 cd hdd/backups
 put $ARCHIVE
-rm     1-Data-7.7z
-rename 1-Data-6.7z 1-Data-7.7z
-rename 1-Data-5.7z 1-Data-6.7z
-rename 1-Data-4.7z 1-Data-5.7z
-rename 1-Data-3.7z 1-Data-4.7z
-rename 1-Data-2.7z 1-Data-3.7z
-rename 1-Data-1.7z 1-Data-2.7z
-rename 1-Data.7z 1-Data-1.7z
+rm     1-Data-31.7z
+rename 1-Data-30.7z 1-Data-31.7z
+rename 1-Data-29.7z 1-Data-30.7z
+rename 1-Data-28.7z 1-Data-29.7z
+rename 1-Data-27.7z 1-Data-28.7z
+rename 1-Data-26.7z 1-Data-27.7z
+rename 1-Data-25.7z 1-Data-26.7z
+rename 1-Data-24.7z 1-Data-25.7z
+rename 1-Data-23.7z 1-Data-24.7z
+rename 1-Data-22.7z 1-Data-23.7z
+rename 1-Data-21.7z 1-Data-22.7z
+rename 1-Data-20.7z 1-Data-21.7z
+rename 1-Data-19.7z 1-Data-20.7z
+rename 1-Data-18.7z 1-Data-19.7z
+rename 1-Data-17.7z 1-Data-18.7z
+rename 1-Data-16.7z 1-Data-17.7z
+rename 1-Data-15.7z 1-Data-16.7z
+rename 1-Data-14.7z 1-Data-15.7z
+rename 1-Data-13.7z 1-Data-14.7z
+rename 1-Data-12.7z 1-Data-13.7z
+rename 1-Data-11.7z 1-Data-12.7z
+rename 1-Data-10.7z 1-Data-11.7z
+rename 1-Data-09.7z 1-Data-10.7z
+rename 1-Data-08.7z 1-Data-09.7z
+rename 1-Data-07.7z 1-Data-08.7z
+rename 1-Data-06.7z 1-Data-07.7z
+rename 1-Data-05.7z 1-Data-06.7z
+rename 1-Data-04.7z 1-Data-05.7z
+rename 1-Data-03.7z 1-Data-04.7z
+rename 1-Data-02.7z 1-Data-03.7z
+rename 1-Data-01.7z 1-Data-02.7z
+rename 1-Data.7z    1-Data-01.7z
 quit
 END_SCRIPT
 
